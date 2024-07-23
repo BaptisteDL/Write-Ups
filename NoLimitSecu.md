@@ -12,7 +12,7 @@ Benoit Dupont, expert en cybersécurité, discute de l'évolution de l'écosyst�
 
 ![](https://www.jock.life/wp-content/uploads/2020/11/mon-mec-est-geek.jpg)
 
-1. Amateurisme des Débuts :
+1. 🤓 Amateurisme des Débuts : 🤓
 
 • Motivations Personnelles : Les premiers attaquants étaient souvent motivés par la curiosité, le défi intellectuel ou le désir de notoriété. Ils étaient généralement des amateurs passionnés par la technologie.
 
@@ -22,7 +22,7 @@ Benoit Dupont, expert en cybersécurité, discute de l'évolution de l'écosyst�
 
 ![](https://media.makeameme.org/created/informatik.jpg)
 
-2. Montée en Compétences et Organisation :
+2. ↗️ Montée en Compétences et Organisation : ↗️
 
 • Formation et Expertise : Au fil du temps, les attaquants ont acquis des compétences de plus en plus sophistiquées. Certains ont suivi des formations spécifiques en informatique et en sécurité.
 
@@ -32,7 +32,7 @@ Benoit Dupont, expert en cybersécurité, discute de l'évolution de l'écosyst�
 
 ![](https://t4.ftcdn.net/jpg/04/73/25/81/360_F_473258184_bEO2EfqRonuZu8Y77aycLjDWF29e89qg.jpg)
 
-3. Criminalité Organisée et Économies Souterraines
+3. 👥 Criminalité Organisée et Économies Souterraines : 👥
 
 • Motivations Financières : La principale motivation est devenue financière, avec des attaques visant à extorquer de l'argent, voler des données précieuses ou frauder des systèmes financiers. 
 
@@ -42,7 +42,7 @@ Benoit Dupont, expert en cybersécurité, discute de l'évolution de l'écosyst�
 
 ![](https://images.cointelegraph.com/cdn-cgi/image/format=auto,onerror=redirect,quality=90,width=1434/https://s3.cointelegraph.com/storage/uploads/view/3a57fa72b6a5ec808dc9a2da2c39988b.jpg)
 
-4. Attaques Sponsorisées par des États :
+4. 🏳️ Attaques Sponsorisées par des États : 🏳️
 
 • APT (Advanced Persistent Threats) : Des groupes de hackers sponsorisés par des États mènent des attaques prolongées et ciblées contre des infrastructures critiques, des entreprises et des gouvernements pour des raisons de renseignement ou de déstabilisation.
 
@@ -50,19 +50,19 @@ Benoit Dupont, expert en cybersécurité, discute de l'évolution de l'écosyst�
 
 ![](https://www.geco-it.fr/wp-content/uploads/2021/05/ransomware.jpg)
 
-5. Ransomware et Extorsion :
+5. 🪝 Ransomware et Extorsion : 🪝
 
 • Ransomware : Les attaques de ransomware se sont professionnalisées avec des opérations bien structurées. Les attaquants chiffrent les données des victimes et exigent une rançon pour les déchiffrer.
 
 • Double Extorsion : En plus de chiffrer les données, les attaquants menacent de publier les données volées si la rançon n'est pas payée, ajoutant une pression supplémentaire sur les victimes.
 
-6. Augmentation de la Fréquence et de la Gravité des Attaques :
+6. ⚔️ Augmentation de la Fréquence et de la Gravité des Attaques : ⚔️
 
 • Coûts Accrus : Les entreprises et les gouvernements font face à des coûts accrus pour se protéger contre ces attaques sophistiquées et pour récupérer en cas de compromission.
 
 • Complexité des Réponses : La réponse aux incidents de cybersécurité est devenue plus complexe, nécessitant des équipes spécialisées et des collaborations internationales.
 
-7. Économie de la Cybersécurité :
+7. 💲 Économie de la Cybersécurité : 💲
 
 • Développement de l'Industrie : L'essor de la cybercriminalité a conduit à une croissance rapide de l'industrie de la cybersécurité, avec des investissements massifs dans la recherche, le développement d'outils de défense et la formation des professionnels.
 
