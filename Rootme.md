@@ -36,7 +36,7 @@ gunzip ch9.gz
 Ainsi nous allons avoir un fichier qui en ressort, le fichier ch9. Nous ne connaissont pas l'extension du fichier. On pourrait ce poser beaucoup de questions pour savoir quoi en faire. Mais dans l'énoncé du challenge nous pouvons voir que l'on nous propose d'utiliser un outil du nom de **Photorec**.
 Photorec est un outil qui permet la récupération de données perdus, tels que des photos, des documents, des vidéos et d'autres types de fichiers.
 
-Etant sur une machine Kali, je me suis posé la question suivante "Existerait-il pas un autre outil qui pourrait faire la même chose que Photorec ?" 🤔
+Etant sur une machine Kali, je me suis posé la question suivante "Existerait-il pas un autre outil qui pourrait faire la même chose que Photorec ?🤔"
 
 Après quelque recherche j'ai trouvé un outil open-source qui permet de récupérer des fichiers supprimés à partir de disques durs, de cartes mémoire, de clés USB, et d'autres support de stockage.
 
@@ -73,3 +73,42 @@ exiftool 00040085.jpg
 ![Exiftool1](https://github.com/BaptisteDL/Write-Ups/blob/main/Exiftool1.png)
 
 Ainsi, malheureusement nous pouvons rien exploiter de ces informations...
+
+Nous sommes reparti pour vérifier les autres dossiers. Nous passons par le dossier ole, pdf et png. Mais dans celui-ci nous pouvons voir plusieurs dont une qui retient notre attention. La photo **00021506.png**. 
+
+![Chat1](https://github.com/BaptisteDL/Write-Ups/blob/main/chat1.png)
+
+Après avoir vu cette image on peut faire comme la precédente image, on va analyser ces metadata.
+
+```BASH
+exiftool 00021506.png
+```
+Malheureseusement nous avons toujours pas d'information nous permettant de retouver le chat.
+
+![Exiftool2](https://github.com/BaptisteDL/Write-Ups/blob/main/exiftool2.png)
+
+Nous y sommes presque ! 
+
+### 😺 Partie trois - Retrouvons le chat 😺
+
+Nous allons regarder dans le dernier dossiers. Ce dernier ce nomme zip, nous pouvons voir qu'à l'intérieur, il y a deux fichiers zip. Un nommé 0021506 et 00028695. 
+
+L'un des fichiers ce nomme exactement comme la photo. Nous allons alors le dezipper et voir ce qu'il y a l'intérieur. Nous pouvons voir plusieurs dossiers et fichiers. Mon premier et d'aller voir dans le dossier photo. 
+
+Ainsi nous pouvons voir qu'il y a la photo qui a été utilisé dans le précédent fichier. Nous pouvons vérifier les metada de cette dernière image. 
+
+```BASH
+exiftool 1000000000000CC000000990038D2A62.jpg
+```
+
+![exiftool3](https://github.com/BaptisteDL/Write-Ups/blob/main/exiftool3.png)
+
+![exiftool4](https://github.com/BaptisteDL/Write-Ups/blob/main/exiftool4.png)
+
+Nous avons beaucoup plus d'information que sur les autres fichiers. Nous pouvons voir plusieurs informations tel que la marque du téléphone, le modéle du téléphone. Ainsi que l'information la plus importante la postion gps au moment ou la photo a été prise.
+
+Il nous reste plus grand chose à faire à présent. Nous allons prendre les coordonées et les rentrer sur Google maps :
+
+>47 36' 16.15" N 7 24' 52.48" E
+
+Maintenant nous savons dans quelle village le chat est detenu par le ravisseur.
