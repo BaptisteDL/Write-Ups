@@ -15,50 +15,50 @@ La somme md5 de l’archive est edf2f1aaef605c308561888079e7f7f7. Entrez la vill
 * Forensic - Metadata
 * Outil - Photorec
 
-## 1 resource assocées
+## 1 ressource associées
 
 * Data sanitization and recovery (Forensic)
 ---
 ### 🔑 Première Phase - Clef USB 🔑
 
-Ainsi nous sommes missonné pour retouver le chat du président.
+Ainsi, nous sommes missionnés pour retrouver le chat du président.
 
-Pour se faire nous allons utiliser notre meilleur machine Kali Linux et réussir ce challenge !
+Pour ce faire, nous allons utiliser notre meilleure machine Kali Linux et réussir ce challenge !
 
 Nous avons une seule ressource à notre disposition. Un fichier ch9.gz qui correspond à la clef USB du ravisseur.
 
-Première étape, nous devons décompresser ce fichier pour voir ce qu'il y à l'intérieur. Pour ce faire nous allons utiliser la commande **gunzip** qui permet de décompresser les fichiers compressés au format **.gz**.
+Première étape, nous devons décompresser ce fichier pour voir ce qu'il y a l'intérieur. Pour ce faire nous allons utiliser la commande **gunzip** qui permet de décompresser les fichiers compressés au format **.gz**.
 
 ```BASH
 gunzip ch9.gz
 ```
 
-Ainsi nous allons avoir un fichier qui en ressort, le fichier ch9. Nous ne connaissont pas l'extension du fichier. On pourrait ce poser beaucoup de questions pour savoir quoi en faire. Mais dans l'énoncé du challenge nous pouvons voir que l'on nous propose d'utiliser un outil du nom de **Photorec**.
-Photorec est un outil qui permet la récupération de données perdus, tels que des photos, des documents, des vidéos et d'autres types de fichiers.
+Ainsi, nous allons avoir un fichier qui en ressort, le fichier ch9. Nous ne connaissons pas l'extension du fichier. On pourrait se poser beaucoup de questions pour savoir quoi en faire. Mais dans l'énoncé du challenge, nous pouvons voir que l'on nous propose d'utiliser un outil du nom de **Photorec**.
+Photorec est un outil qui permet la récupération de données perdues, tels que des photos, des documents, des vidéos et d'autres types de fichiers.
 
-Etant sur une machine Kali, je me suis posé la question suivante "Existerait-il pas un autre outil qui pourrait faire la même chose que Photorec ?🤔"
+Étant sur une machine Kali, je me suis posé la question suivante "Existerait-il pas un autre outil qui pourrait faire la même chose que Photorec ?🤔"
 
-Après quelque recherche j'ai trouvé un outil open-source qui permet de récupérer des fichiers supprimés à partir de disques durs, de cartes mémoire, de clés USB, et d'autres support de stockage.
+Après quelque recherche, j'ai trouvé un outil open-source qui permet de récupérer des fichiers supprimés à partir de disques durs, de cartes mémoire, de clés USB, et d'autres support de stockage.
 
-Ce qui tombe bien car nous avons des relicats d'une clef USB.
+Ce qui tombe bien, car nous avons des reliquats d'une clef USB.
 
 Nous allons donc installer l'outil **foremost**.
 
 ```BASH
 sudo apt install foremost
 ```
-Maintenant nous pouvons utiliser l'outil.
+Maintenant, nous pouvons utiliser l'outil.
 
 ```BASH
 foremost cha9
 ```
-Apèrs la fin de l'extraction du fichier nous allons avoir dossier avec toute les données de la clef USB.
+Après la fin de l'extraction du fichier nous allons avoir dossier avec toutes les données de la clef USB.
 
 ### 🔎 Deuxième phase - Recherche d'indice 🔎
 
-Nous avons donc un dossier avec tout ce qui était contenu dans la clef USB. Maintenant nous devons faire un travail de recherche, pour voir si notre ravisseur n'aurait pas laisser des indices ou des trâces pour retrouver ce pauvre chat.
+Nous avons donc un dossier avec tout ce qui était contenu dans la clef USB. Maintenant, nous devons faire un travail de recherche, pour voir si notre ravisseur n'aurait pas laissé des indices ou des traces pour retrouver ce pauvre chat.
 
-Nous pouvons regarder dans le premier dossier qui ce nomme **gif**, il y contient unique des gifs... Rien de bien intéressant. Le prochain dossier est le dossier **htm**, il y contient des fichiers htm qui sont en soit des fichier html. Après vérification de plusieurs fichiers, nous constatons qu'il n'y a rien d'intéressant à l'intérieur de celui-ci. Nous pouvons passer au dossier suivant qui est jpg. A l'intérieur vous pouvez le deviner il contient des fichiers jpg, mais un des fichiers à l'intérieur est intéréssant. Le fichier ce nommant **00040085.jpg** contient une image de chat, peut-être somme nous proches du but !? 
+Nous pouvons regarder dans le premier dossier qui se nomme **gif**, il y contient uniquement des gifs... Rien de bien intéressant. Le prochain dossier est le dossier **htm**, il y contient des fichiers htm qui sont en soit des fichier html. Après vérification de plusieurs fichiers, nous constatons qu'il n'y a rien d'intéressant à l'intérieur de celui-ci. Nous pouvons passer au dossier suivant qui est JPEG. À l'intérieur, vous pouvez le deviner, il contient des fichiers JPEG, mais un des fichiers à l'intérieur est intéressant. Le fichier se nommant **00040085.jpg** contient une image de chat, peut-être somme nous proches du but !? 
 
 Mais que faire de cette photo ? Comme pour la première phase, nous pouvons voir que dans l'énoncé, il parle de **metadata**. Les metadata (ou métadonnées en français) donnent des informations sur d'autres données. Elles fournissent des détails supplémentaires qui aident à identifier, décrire, gérer ou organiser les ressources d'information.
 
@@ -72,18 +72,18 @@ exiftool 00040085.jpg
 
 ![Exiftool1](https://github.com/BaptisteDL/Write-Ups/blob/main/Exiftool1.png)
 
-Ainsi, malheureusement nous pouvons rien exploiter de ces informations...
+Ainsi, malheureusement, nous ne pouvons rien exploiter de ces informations...
 
-Nous sommes reparti pour vérifier les autres dossiers. Nous passons par le dossier ole, pdf et png. Mais dans celui-ci nous pouvons voir plusieurs dont une qui retient notre attention. La photo **00021506.png**. 
+Nous sommes repartis pour vérifier les autres dossiers. Nous passons par le dossier ole, pdf et png. Mais dans celui-ci, nous pouvons voir plusieurs, dont une qui retient notre attention. La photo **00021506.png**. 
 
 ![Chat1](https://github.com/BaptisteDL/Write-Ups/blob/main/chat1.png)
 
-Après avoir vu cette image on peut faire comme la precédente image, on va analyser ces metadata.
+Après avoir vu cette image, on peut faire comme la précédente image, on va analyser ces metadata.
 
 ```BASH
 exiftool 00021506.png
 ```
-Malheureseusement nous avons toujours pas d'information nous permettant de retouver le chat.
+Malheureusement, nous n'avons toujours pas d'information nous permettant de retrouver le chat.
 
 ![Exiftool2](https://github.com/BaptisteDL/Write-Ups/blob/main/exiftool2.png)
 
@@ -91,11 +91,11 @@ Nous y sommes presque !
 
 ### 😺 Partie trois - Retrouvons le chat 😺
 
-Nous allons regarder dans le dernier dossiers. Ce dernier ce nomme zip, nous pouvons voir qu'à l'intérieur, il y a deux fichiers zip. Un nommé 0021506 et 00028695. 
+Nous allons regarder dans le dernier dossier. Ce dernier se nomme zip, nous pouvons voir qu'à l'intérieur, il y a deux fichiers zip. Un nommé 0021506 et 00028695. 
 
-L'un des fichiers ce nomme exactement comme la photo. Nous allons alors le dezipper et voir ce qu'il y a l'intérieur. Nous pouvons voir plusieurs dossiers et fichiers. Mon premier et d'aller voir dans le dossier photo. 
+L'un des fichiers se nomme exactement comme la photo. Nous allons alors le dézipper et voir ce qu'il y a l'intérieur. Nous pouvons voir plusieurs dossiers et fichiers. Mon premier reflex et d'aller voir dans le dossier photo. 
 
-Ainsi nous pouvons voir qu'il y a la photo qui a été utilisé dans le précédent fichier. Nous pouvons vérifier les metada de cette dernière image. 
+Ainsi, nous pouvons voir qu'il y a la photo qui a été utilisée dans le précédent fichier. Nous pouvons vérifier les metada de cette dernière image. 
 
 ```BASH
 exiftool 1000000000000CC000000990038D2A62.jpg
@@ -105,10 +105,10 @@ exiftool 1000000000000CC000000990038D2A62.jpg
 
 ![exiftool4](https://github.com/BaptisteDL/Write-Ups/blob/main/exiftool4.png)
 
-Nous avons beaucoup plus d'information que sur les autres fichiers. Nous pouvons voir plusieurs informations tel que la marque du téléphone, le modéle du téléphone. Ainsi que l'information la plus importante la postion gps au moment ou la photo a été prise.
+Nous avons beaucoup plus d'information que sur les autres fichiers. Nous pouvons voir plusieurs informations telles que la marque du téléphone, le modèle du téléphone. Ainsi que l'information la plus importante la position GPS au moment où la photo a été prise.
 
-Il nous reste plus grand chose à faire à présent. Nous allons prendre les coordonées et les rentrer sur Google maps :
+Il nous reste plus grand-chose à faire à présent. Nous allons prendre les coordonnées et les rentrer sur Google maps :
 
 >47 36' 16.15" N 7 24' 52.48" E
 
-Maintenant nous savons dans quelle village le chat est detenu par le ravisseur.
+Maintenant, nous savons dans quel village le chat est détenu par le ravisseur.
