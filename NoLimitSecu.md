@@ -10,8 +10,6 @@
 
 Benoit Dupont, expert en cybersécurité, discute de l'évolution de l'écosystème des attaquants, passant de l'amateurisme à une professionnalisation extrême.
 
-![](https://www.jock.life/wp-content/uploads/2020/11/mon-mec-est-geek.jpg)
-
 1. 🤓 Amateurisme des Débuts : 🤓
 
 • Motivations Personnelles : Les premiers attaquants étaient souvent motivés par la curiosité, le défi intellectuel ou le désir de notoriété. Ils étaient généralement des amateurs passionnés par la technologie.
@@ -66,9 +64,8 @@ Benoit Dupont, expert en cybersécurité, discute de l'évolution de l'écosyst�
 
 • Développement de l'Industrie : L'essor de la cybercriminalité a conduit à une croissance rapide de l'industrie de la cybersécurité, avec des investissements massifs dans la recherche, le développement d'outils de défense et la formation des professionnels.
 
-• Réglementations et Politiques : Les gouvernements élaborent des réglementations et des politiques pour renforcer la cybersécurité nationale et internationale, incluant des sanctions 
-contre les cybercriminels et les États soutenant ces activités.
+• Réglementations et Politiques : Les gouvernements élaborent des réglementations et des politiques pour renforcer la cybersécurité nationale et internationale, incluant des sanctions contre les cybercriminels et les États soutenant ces activités.
 
 Conclusion :
-L'épisode de NoLimitSecu avec Benoit Dupont met en lumière l'évolution remarquable de l'écosystème des attaquants, passant de l'amateurisme à une professionnalisation extrême. Cette 
+L'épisode avec Benoit Dupont met en lumière l'évolution de l'écosystème des attaquants, passant de l'amateurisme à une professionnalisation extrême. Cette 
 transformation a des implications profondes pour la sécurité des entreprises, des gouvernements et des particuliers. La compréhension de cette évolution est essentielle pour développer des stratégies de défense efficaces et pour anticiper les futures menaces dans le domaine de la cybersécurité.
