@@ -1,21 +1,21 @@
-# Root Me
+# 💀 Root Me 💀
 
 ![RootMe](https://pro.root-me.org/squelettes/images/RMP_logo_blanc.png)
 
-## Forensic - Trouvez le chat
+## 🔎 Forensic - Trouvez le chat 🔎
 
-### Énoncé
+### 📝 Énoncé 📝
 
 Le chat du président a été kidnappé par des indépendantistes. Un suspect a été interpellé par la gendarmerie. Il détenait sur lui une clef USB. Berthier, une nouvelle fois, à vous de jouer ! Essayez de faire parler cette clef et de trouver dans quelle ville est retenu ce chat !
 
 La somme md5 de l’archive est edf2f1aaef605c308561888079e7f7f7. Entrez la ville en minuscule.
 
-### 2 vulnérabilités
+### ❗ 2 vulnérabilités ❗
 
 * Forensic - Metadata
 * Outil - Photorec
 
-## 1 ressource associées
+## 📖 1 ressource associées 📖
 
 * Data sanitization and recovery (Forensic)
 ---

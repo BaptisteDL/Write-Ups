@@ -1,8 +1,8 @@
-# Podcast No Limit Secu
+# 🎙️ Podcast No Limit Secu 🎙️
 
 ![](https://pbs.twimg.com/profile_images/580117972687069184/YpqzOtfU_400x400.jpg)
 
-## Professionnalisation des Attaquants
+## ⚔️ Professionnalisation des Attaquants ⚔️
 
 ![](https://academy.avast.com/hubfs/New_Avast_Academy/Hackers/Hacker-Thumb-a1.png)
 
