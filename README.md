@@ -1,6 +1,6 @@
 # 📝 Write-Ups 📝
 
-![Writeup](./Challenge/writeup.png)
+![Writeup](https://github.com/BaptisteDL/Write-Ups/blob/main/Challenge/writeup.png)
 
 ## 😺 Root Me - Trouvez le chat 😺
 

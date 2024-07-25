@@ -70,13 +70,13 @@ Depuis notre dossier contenant la photo, nous allons ouvrir un terminal et taper
 exiftool 00040085.jpg
 ```
 
-![](./Exiftool1.png)
+![](https://github.com/BaptisteDL/Write-Ups/blob/main/Challenge/Exiftool1.png)
 
 Ainsi, malheureusement, nous ne pouvons rien exploiter de ces informations...
 
 Nous sommes repartis pour vérifier les autres dossiers. Nous passons par le dossier ole, pdf et png. Mais dans celui-ci, nous pouvons voir plusieurs, dont une qui retient notre attention. La photo **00021506.png**. 
 
-![](./chat1.png)
+![](https://github.com/BaptisteDL/Write-Ups/blob/main/Challenge/chat1.png)
 
 Après avoir vu cette image, on peut faire comme la précédente image, on va analyser ces metadata.
 
@@ -85,7 +85,7 @@ exiftool 00021506.png
 ```
 Malheureusement, nous n'avons toujours pas d'information nous permettant de retrouver le chat.
 
-![](./exiftool2.png)
+![](https://github.com/BaptisteDL/Write-Ups/blob/main/Challenge/exiftool2.png)
 
 Nous y sommes presque ! 
 
@@ -101,9 +101,9 @@ Ainsi, nous pouvons voir qu'il y a la photo qui a été utilisée dans le préc�
 exiftool 1000000000000CC000000990038D2A62.jpg
 ```
 
-![](./exiftool3.png)
+![](https://github.com/BaptisteDL/Write-Ups/blob/main/Challenge/exiftool3.png)
 
-![](./exiftool4.png)
+![](https://github.com/BaptisteDL/Write-Ups/blob/main/Challenge/exiftool4.png)
 
 Nous avons beaucoup plus d'information que sur les autres fichiers. Nous pouvons voir plusieurs informations telles que la marque du téléphone, le modèle du téléphone. Ainsi que l'information la plus importante la position GPS au moment où la photo a été prise.
 
